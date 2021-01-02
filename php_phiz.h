@@ -12,4 +12,12 @@ extern zend_module_entry phiz_module_entry;
 ZEND_TSRMLS_CACHE_EXTERN()
 # endif
 
+ZEND_BEGIN_MODULE_GLOBALS(phiz)
+    zend_long scale;
+ZEND_END_MODULE_GLOBALS(phiz)
+
+ZEND_EXTERN_MODULE_GLOBALS(phiz)
+
+#define PHIZ_G(v) ZEND_MODULE_GLOBALS_ACCESSOR(phiz, v)
+
 #endif	/* PHP_PHIZ_H */
