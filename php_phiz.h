@@ -20,4 +20,6 @@ ZEND_EXTERN_MODULE_GLOBALS(phiz)
 
 #define PHIZ_G(v) ZEND_MODULE_GLOBALS_ACCESSOR(phiz, v)
 
+
+
 #endif	/* PHP_PHIZ_H */
